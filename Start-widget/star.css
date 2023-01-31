@@ -1,0 +1,25 @@
+.star-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset {
+    display: none;
+    height: 30px;
+    width: 100px;
+}
+
+
+.star-list{
+    display: flex;
+    list-style: none;
+}
+
+.star-list li{
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+

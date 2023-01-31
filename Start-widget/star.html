@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="star.css">
+</head>
+<body>
+    
+    <div class="star-container">
+        <ul class="star-list">
+            <li class="star" id="star1" onclick="updateStarRating(1)">☆</li>
+            <li class="star" id="star2" onclick="updateStarRating(2)">☆</li>
+            <li class="star" id="star3" onclick="updateStarRating(3)">☆</li>
+            <li class="star" id="star4" onclick="updateStarRating(4)">☆</li>
+            <li class="star" id="star5" onclick="updateStarRating(5)">☆</li>
+        </ul>
+        <div class="ratingText">0 / 5</div>
+        <button class="reset" onclick="updateStarRating(0)">Reset</button>
+    </div>
+    <script src="star.js"></script>
+</body>
+</html>
