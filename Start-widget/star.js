@@ -1,8 +1,8 @@
+let globalRating = 0 ;
+
 function updateStarRating(rating) {
-    console.log(rating);
+    //console.log(rating);
     var totalRatings = 5;
-
-
 
     if(rating > 0) {
         document.getElementsByClassName("reset")[0].style.display = 'block'; 
@@ -20,4 +20,24 @@ function updateStarRating(rating) {
 
     document.getElementsByClassName("ratingText")[0].innerText = `${rating} / ${totalRatings}`
 
+    globalRating = rating;
+
+}
+
+function hoverStarRating(rating) {
+
+    var totalRatings = 5;
+
+    for(var i=1 ; i<=rating ; i++) {
+        document.getElementById(`star${i}`).innerHTML = "★"
+    }
+
+    for(var i=rating+1 ; i<=totalRatings ; i++) {
+        document.getElementById(`star${i}`).innerHTML = "☆"
+    }
+
+}
+
+function removeHoverRating() {
+    updateStarRating(globalRating);
 }

@@ -11,11 +11,11 @@
     
     <div class="star-container">
         <ul class="star-list">
-            <li class="star" id="star1" onclick="updateStarRating(1)">☆</li>
-            <li class="star" id="star2" onclick="updateStarRating(2)">☆</li>
-            <li class="star" id="star3" onclick="updateStarRating(3)">☆</li>
-            <li class="star" id="star4" onclick="updateStarRating(4)">☆</li>
-            <li class="star" id="star5" onclick="updateStarRating(5)">☆</li>
+            <li class="star" id="star1" onclick="updateStarRating(1)" onmouseover="hoverStarRating(1)" onmouseout="removeHoverRating()">☆</li>
+            <li class="star" id="star2" onclick="updateStarRating(2)" onmouseover="hoverStarRating(2)" onmouseout="removeHoverRating()">☆</li>
+            <li class="star" id="star3" onclick="updateStarRating(3)" onmouseover="hoverStarRating(3)" onmouseout="removeHoverRating()">☆</li>
+            <li class="star" id="star4" onclick="updateStarRating(4)" onmouseover="hoverStarRating(4)" onmouseout="removeHoverRating()">☆</li>
+            <li class="star" id="star5" onclick="updateStarRating(5)" onmouseover="hoverStarRating(5)" onmouseout="removeHoverRating()">☆</li>
         </ul>
         <div class="ratingText">0 / 5</div>
         <button class="reset" onclick="updateStarRating(0)">Reset</button>
