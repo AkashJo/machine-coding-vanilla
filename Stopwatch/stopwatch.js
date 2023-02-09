@@ -5,10 +5,12 @@ let interval = 0;
 
 document.getElementById('startTimer').addEventListener('click',()=>{
 
+    let intervalTime = parseInt(document.getElementById("input-text").value);
+    console.log(document.getElementById("input-text").value);
     if(interval !=0 ) {
         clearInterval(interval)
     }
-    interval = setInterval(displayTime,10);
+    interval = setInterval(displayTime,intervalTime);
 })
 
 document.getElementById('pauseTimer').addEventListener('click',()=>{
@@ -22,6 +24,8 @@ document.getElementById('resetTimer').addEventListener('click',()=>{
 })
 
 const displayTime = () => {
+
+    let intervalTime = parseInt(document.getElementById("input-text").value);
 
     milliseconds = milliseconds + 10;
     if(milliseconds == 1000){

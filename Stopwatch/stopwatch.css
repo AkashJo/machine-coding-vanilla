@@ -57,3 +57,19 @@ body{
 .buttons button:nth-last-child(1){
     background-color: #20b380;
 }
+
+.input-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container input p{
+    display: flex;
+    height: 20px;
+    width: 100px;
+    padding: 5px;
+}
+
+
+
