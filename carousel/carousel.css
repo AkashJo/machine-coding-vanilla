@@ -1,0 +1,28 @@
+.main-container {
+    display: flex   ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#dot-container button{
+    background: none;
+    border: none;
+    
+}
+
+#images{
+    padding: 8px;
+}
+
